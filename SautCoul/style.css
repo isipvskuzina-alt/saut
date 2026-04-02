@@ -45,26 +45,27 @@ main {
     padding: 20px;
     border: 1px solid #334155;
     border-radius: 20px;
-    margin: 20px auto;
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
     box-shadow: 0 20px 30px -15px rgba(0, 0, 0, 0.5);
     border-color: #facc15;
 }
+
+.card, .card-special {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 15px;
+}
+
 
 .card-special {
     width: 320px;
     background: linear-gradient(145deg, #0f172a, #1e293b);
     padding: 20px;
     border: 2px solid #922807;
-    border-radius: 40px;
-    margin: 20px auto;
     text-align: center;
-    transition: all 0.2s ease;
 }
 
 
@@ -110,13 +111,11 @@ a {
     border-radius: 40px;
     display: inline-block;
     font-weight: bold;
-    transition: all 0.2s ease;
 }
 
 a:hover {
     background: #eab308;
     color: #000;
-    transform: scale(1.02);
 }
 
 .info {
@@ -170,12 +169,8 @@ main .card p {
     font-weight: bold;
 }
 
-
 .cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    text-align: center;
     margin: 30px 0;
 }
 
@@ -184,7 +179,7 @@ footer {
     text-align: center;
     margin-top: 60px;
     padding-top: 25px;
-    border-top: 1px solid #334155;
     color: #64748b;
     font-size: 14px;
 }
+
